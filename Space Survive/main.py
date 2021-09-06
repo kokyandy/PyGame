@@ -157,11 +157,7 @@ class Player(pygame.sprite.Sprite):
 			self.rect.right = WIDTH
 		if self.rect.left < 0:
 			self.rect.left = 0
-	'''
-			self.rect.x += 2
-			if self.rect.left > WIDTH:
-				self.rect.right = 0
-	'''
+			
 	def shoot(self):
 		if not(self.hidden):
 			if self.gun == 1:
